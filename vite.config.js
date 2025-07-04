@@ -2,5 +2,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/check/', // <-- repo name here
+  base: '/Port/', // Use the NEW repo name here
 })
