@@ -101,7 +101,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Harsha Devadiga
+              Harsha 
             </div>
             <div className="hidden md:flex space-x-8">
               {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
@@ -129,7 +129,7 @@ function Home() {
                 Full-Stack Developer
               </h1>
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-                Hello, I am Harsha Devadiga
+                Hello, I am Harsha
               </h2>
             </div>
             
@@ -175,7 +175,7 @@ function Home() {
       <section id="skills" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Technical skills list
+            Technical skills 
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
