@@ -33,24 +33,40 @@ function Home() {
   };
 
   const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React frontend, Node.js backend, and PostgreSQL database. Features include user authentication, payment integration, and admin dashboard.",
-      tech: ["React", "Node.js", "PostgreSQL", "Express", "Docker"],
-      image: "🛒"
-    },
-    {
-      title: "Real-time Chat Application",
-      description: "Socket.io powered chat app with React frontend and Node.js backend. Includes real-time messaging, file sharing, and user presence indicators.",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB", "Redis"],
-      image: "💬"
-    },
-    {
-        title:"Ai-Asisted coding platform",
-        description:"Helps to verify the syntax and can ask the doubts ai at the time of coding .Coder can focus completely on logic",
-        tech:["React","Postgress","Spring","Redux","AI","API"]
-    }
-  ];
+  {
+    title: "AI-Powered CCTV Surveillance & Person Search System",
+    description:
+      "Intelligent CCTV surveillance system that detects, tracks, and re-identifies people across video streams. Video footage is indexed using deep learning embeddings, enabling person search via image and retrieval of matching frames with timestamps.",
+    tech: ["Python", "YOLOv8", "OpenCV", "Deep Learning", "FAISS", "React", "Spring Boot"],
+    image: "📹",
+    github: "https://github.com/Harsha12022002/CCTV_INDEXING",
+  },
+  {
+    title: "Endpoint Network Monitoring & Control Daemon",
+    description:
+      "System-level endpoint security project that runs a local proxy daemon to intercept all outbound HTTP/HTTPS traffic. Implements domain-based and time-based access control using configurable JSON rules, enabling parental control and enterprise endpoint security.",
+    tech: ["Python", "Networking", "HTTP Proxy", "Security", "System Design"],
+    image: "🔒",
+    github: "https://github.com/Harsha12022002/END_POINT_SECURITY",
+  },
+  {
+    title: "Real-time Chat Application",
+    description:
+      "Socket.io powered chat app with React frontend and Node.js backend. Includes real-time messaging, file sharing, and user presence indicators.",
+    tech: ["React", "Node.js", "Socket.io", "MongoDB", "Redis"],
+    image: "💬",
+    github: "https://github.com/Harsha12022002/Kafka-Chat",
+  },
+  {
+    title: "AI-Assisted Coding Platform",
+    description:
+      "AI-assisted coding platform that helps developers verify syntax and ask questions while coding, allowing them to focus purely on problem-solving and logic.",
+    tech: ["React", "PostgreSQL", "Spring Boot", "Redux", "AI", "APIs"],
+    image: "🤖",
+    github: "https://github.com/Harsha12022002/Coding-Master",
+  },
+];
+
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
@@ -85,7 +101,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Harsha
+              Harsha Devadiga
             </div>
             <div className="hidden md:flex space-x-8">
               {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
@@ -113,7 +129,7 @@ function Home() {
                 Full-Stack Developer
               </h1>
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-                Hello, I am Harsha
+                Hello, I am Harsha Devadiga
               </h2>
             </div>
             
@@ -246,14 +262,20 @@ function Home() {
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <button className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-sm font-medium hover:scale-105 transition-all duration-300">
+                    {/*<button className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-sm font-medium hover:scale-105 transition-all duration-300">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
-                    </button>
-                    <button className="flex items-center px-4 py-2 border border-purple-400 text-purple-400 rounded-lg text-sm font-medium hover:bg-purple-500 hover:text-white transition-all duration-300">
+                    </button>*/}
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 border border-purple-400 text-purple-400 rounded-lg text-sm font-medium hover:bg-purple-500 hover:text-white transition-all duration-300"
+                    >
                       <Github className="w-4 h-4 mr-2" />
                       Code
-                    </button>
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -276,18 +298,30 @@ function Home() {
             <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
               <Mail className="w-8 h-8 text-cyan-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">Email</h3>
-              <p className="text-gray-300">harshadevadiga6289@gmail.com</p>
+            <a
+              href="mailto:harshadevadiga6289@gmail.com"
+              className="text-gray-300 hover:text-cyan-400 transition-colors"
+            >
+              harshadevadiga6289@gmail.com
+            </a>
             </div>
             <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-400/50 transition-all duration-300">
               <Phone className="w-8 h-8 text-purple-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">Phone</h3>
-              <p className="text-gray-300">+91 63617753XX</p>
+              <p className="text-gray-300">+91 6361775340</p>
             </div>
             <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-pink-400/50 transition-all duration-300">
               <Linkedin className="w-8 h-8 text-pink-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
               <p className="text-gray-300">
-                <a href='https://www.linkedin.com/feed/'target='blank'>LinkedIn</a>
+                <a
+                  href="https://www.linkedin.com/in/harsha-77a1bb288"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+
               </p>
             </div>
           </div>
@@ -381,3 +415,4 @@ function Home() {
 }
 
 export default Home;
+
